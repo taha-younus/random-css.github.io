@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1689585b7c.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: antiquewhite;
+        }
+        .boxs{
+            width: 50px;
+            height: 380px;
+            border-radius: 15px;
+            background-color: red;
+            margin-left: 6px;
+            background-position: left;
+            transition: all ease-in-out .8s;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px black;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            padding: 3px;
+        }
+
+        .boxs:hover{
+            background-size: cover;
+            width: 380px;
+            background-position: center;
+        }
+
+        .round{
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 0, 255, 0.398);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all ease-in-out .5s;
+        }
+
+        .text{
+            color: rgba(240, 248, 255, 0.6);
+            font-family: 'Poppins',sans-serif;
+        }
+        .boxs:hover .round{
+            position: relative;
+            bottom: 90%;
+        }
+
+        @media only screen and (max-width:260px){
+            .container{
+                display: flex;
+                flex-direction: column;
+                padding: 8px;
+            }
+
+            .boxs{
+                width: 80px;
+                height:120px;
+                margin-top: 5px;
+            }
+
+            .boxs:hover{
+                width: 240px;
+            }
+
+            .boxs:hover .round{
+            position: relative;
+            bottom: 60%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+   <div class="boxs box-1" style="background-image: url('https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?q=80&w=1571&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"><div class="round"><font class="text">1</font></div></div>
+   <div class="boxs box-2" style="background-image: url('https://images.unsplash.com/photo-1484589065579-248aad0d8b13?q=80&w=1518&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"><div class="round"><font class="text">2</font></div></div>
+   <div class="boxs box-3" style="background-image: url('https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"><div class="round"><font class="text">3</font></div></div>
+   <div class="boxs box-4" style="background-image: url('https://images.unsplash.com/photo-1592561199818-6b69d3d1d6e2?q=80&w=1588&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"><div class="round"><font class="text">4</font></div></div>
+</body>
+</html>
